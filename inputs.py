@@ -2,12 +2,23 @@ def accept_value():
     while True:
         try:
             first_value = int(input("Enter first number:\n"))
+        except:
+            print("Error occoured")
+            continue
+        else:
+            if (first_value < 0 or first_value > 255):
+                print("Please, enter value between 0 and 255")
+                continue
+            break
+            
+    while True:
+        try:
             second_value = int(input("Enter second number:\n"))
         except:
             print("Error occoured")
             continue
         else:
-            if (first_value < 0 or first_value > 255) or (second_value < 0 or second_value > 255):
+            if (second_value < 0 or second_value > 255):
                 print("Please, enter value between 0 and 255")
                 continue
             break

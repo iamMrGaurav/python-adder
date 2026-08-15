@@ -4,7 +4,7 @@ def accept_value():
             first_value = int(input("Enter first number:\n"))
             second_value = int(input("Enter second number:\n"))
         except:
-            print("Error occoured")
+            print("Error occurred")
             continue
         else:
             if (first_value < 0 or first_value > 255) or (second_value < 0 or second_value > 255):
